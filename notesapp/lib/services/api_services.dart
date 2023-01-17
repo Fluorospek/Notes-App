@@ -10,14 +10,14 @@ class ApiService {
     Uri requestUri = Uri.parse(_baseUrl + '/add');
     var response = await http.post(requestUri, body: note.toMap());
     var decoded = jsonDecode(response.body);
-    log(decoded.toString());
+    //log(decoded.toString());
   }
 
   static Future<void> deleteNote(Note note) async {
     Uri requestUri = Uri.parse(_baseUrl + '/delete');
     var response = await http.post(requestUri, body: note.toMap());
     var decoded = jsonDecode(response.body);
-    log(decoded.toString());
+    //log(decoded.toString());
   }
 
   static Future<List<Note>> fetchNote(String userid) async {

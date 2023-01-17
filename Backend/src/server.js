@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 mongoose
   .connect(
-    "mongodb+srv://fluorospek:Tan151103@cluster0.7yhr1q2.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://fluorospek:TanDe$h@14884@cluster0.7yhr1q2.mongodb.net/?retryWrites=true&w=majority"
   )
   .then(() => {
     app.get("/", (req, res) => {
