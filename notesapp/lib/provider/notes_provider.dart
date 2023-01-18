@@ -45,7 +45,6 @@ class NotesProvider with ChangeNotifier {
     notes = await ApiService.fetchNote("tanmay");
     sortNotes();
     isLoading = false;
-
     notifyListeners();
   }
 }

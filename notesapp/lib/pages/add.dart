@@ -21,7 +21,7 @@ class _addNewPageState extends State<addNewPage> {
 
   void addNewNote() {
     Note note = Note(
-      id: Uuid().v1(),
+      id: const Uuid().v1(),
       userId: "tanmay",
       title: titleController.text,
       content: contentController.text,
