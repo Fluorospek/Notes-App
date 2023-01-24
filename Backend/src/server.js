@@ -9,11 +9,11 @@ app.use(bodyParser.json());
 
 mongoose
   .connect(
-    "mongodb+srv://fluorospek:tandesh14884@cluster0.7yhr1q2.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://fluorospek:tandes14884@cluster0.7yhr1q2.mongodb.net/?retryWrites=true&w=majority"
   )
   .then(() => {
     app.get("/", (req, res) => {
-      const response = { message: "API Works" };
+      const response = { statuscode: res.statusCode, message: "API Works" };
       res.json(response);
     });
 
