@@ -3,7 +3,7 @@ const router = express.Router();
 
 const Note = require(`./../model/note`);
 
-router.get("/list", async (req, res) => {
+router.post("/list", async (req, res) => {
   var notes = await Note.find({ userId: req.body.userid });
   res.json(notes);
 });
